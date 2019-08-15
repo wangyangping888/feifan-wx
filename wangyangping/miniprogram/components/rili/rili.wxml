@@ -1,0 +1,28 @@
+<!--components/rili/rili.wxml-->
+<view class='rili'>
+  <view class='year-month'>
+    <view class='title'>{{year}}年{{month
+      <9? "0"+(month+1):month+1}}</view>
+        <text class='pre' bindtap='prevMonth'>◀</text>
+        <text class='next' bindtap='nextMonth'>▶</text>
+        <view class='date flex'>
+          <view class='flex-item'>日</view>
+          <view class='flex-item'>一</view>
+          <view class='flex-item'>二</view>
+          <view class='flex-item'>三</view>
+          <view class='flex-item'>四</view>
+          <view class='flex-item'>五</view>
+          <view class='flex-item'>六</view>
+        </view>
+    </view>
+    <view class='flex day-list' wx:for="{{6}}" wx:for-index="i" wx:key="{{i}} ">
+      <view bindtap='onSelect' class="flex-item day wx:if={{days[i*7+j].current?'current':''}} {{(days[i*7+j].year==today[0]&&days[i*7+j].month==today[1]&&days[i*7+j].day==today[2])?'today':''}} {{days[i*7+j].select?'selected':''}} {{days[i*7+j].todo?'todo':''}} "
+        wx:for="{{7}}" wx:for-index="j" wx:key="{{j}}" data-index="{{i*7+j}}">
+        {{days[i*7+j].day}}
+        <text class='dot'></text>
+      </view>
+    </view>
+  </view>
+  <view class='todo list'>
+    <view wx:for="{{todoList}}" wx:key="{{index}}">{{item.time}} {{item.todo}}</view>
+  </view>

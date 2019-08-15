@@ -1,0 +1,5 @@
+<!--miniprogram/pages/home/home.wxml-->
+<view  >{{message}}</view>
+<view wx:for="{{array}}" wx:key="{{index}}" bindtap='dianji' data-item="{{item}}">{{item.message}}</view>
+<import src="/template/foot.wxml"/>
+<template is="test" data="{{test}}"/>

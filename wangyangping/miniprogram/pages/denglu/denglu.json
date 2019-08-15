@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-field": "/components/youzandist/field/index",
+    "van-button": "/components/youzandist/button/index",
+    "van-nav-bar": "/components/youzandist/nav-bar/index"
+  }
+}

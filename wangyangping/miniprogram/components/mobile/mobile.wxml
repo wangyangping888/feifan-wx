@@ -1,0 +1,9 @@
+<!--components/mobile/mobile.wxml-->
+<scroll-view class="pannel clear" scroll-x mode="widthFix">
+    <view class='scrollh'>
+      <view class='ul1' wx:for="{{iconUrls}}">
+        <image src='{{item.src}}'></image>
+        <view class='title'>{{item.title}}</view>
+      </view>
+    </view>
+  </scroll-view>

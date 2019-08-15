@@ -1,0 +1,11 @@
+<!--miniprogram/pages/find/faxian.wxml-->
+<text bindtap='onchange'>扫码</text>
+<view bindtap="onscan">获取位置</view>
+<map id="map" longitude="{{long}}" latitude="{{lat}}" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+<view class="button">
+  <button>
+  <view class="time" >{{hour}}:{{mint<9?"0"+mint:mint}}:{{second<9?"0"+second:second}}</view>
+  <view class="qd">签到</view>
+
+  </button>
+</view>

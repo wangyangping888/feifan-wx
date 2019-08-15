@@ -1,0 +1,22 @@
+/* components/kecheng/kecheng.wxss */
+.kuai image{
+  width: 100%;
+  height: 200rpx;
+
+}
+.kuai{
+  width:45%;
+  height: 45%;
+}
+.kecheng{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30rpx;
+ 
+}
+.title{
+  font-size: 32rpx;
+  text-align: center;
+}

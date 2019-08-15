@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "van-tab": "/components/youzandist/tab/index",
+    "van-tabs": "/components/youzandist/tabs/index",
+    "van-goods-action": "/components/youzandist/goods-action/index",
+    "van-goods-action-icon": "/components/youzandist/goods-action-icon/index",
+    "van-goods-action-button": "/components/youzandist/goods-action-button/index",
+    "van-collapse": "/components/youzandist/collapse/index",
+    "van-collapse-item": "/components/youzandist/collapse-item/index",
+    "van-card": "/components/youzandist/card/index",
+    "van-button": "/components/youzandist/button/index"
+  }
+}

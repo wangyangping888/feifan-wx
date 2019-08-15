@@ -1,0 +1,33 @@
+/* components/mobile/mobile.wxss */
+.pannel{
+  width: 100%;
+  height: 150rpx;
+  white-space: nowrap; 
+  overflow: hidden;
+  background-color:white;
+}
+.title{
+  width: 30%;
+}
+.ul1{
+  width: 150rpx;
+  float: left;
+  display: inline-block;
+}
+.scrollh{
+  width: 200%;
+}
+.ul1 image{
+  width: 80rpx;
+  height: 80rpx;
+  padding-left: 33rpx;
+  margin-top: 25rpx;
+
+
+}
+.title{
+  font-size: 25rpx;
+  color: #333;
+  width: 100%;
+  text-align: center;
+}

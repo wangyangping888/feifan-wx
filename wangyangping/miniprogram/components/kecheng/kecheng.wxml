@@ -1,0 +1,13 @@
+<!--components/kecheng/kecheng.wxml-->
+<view class="kecheng">
+
+  <view class="kuai" wx:for="{{tupUrls}}">
+    <navigator url="{{item.url}}">
+      <image src="{{item.src}}"></image>
+      <view class="title">{{item.title}}</view>
+      <!-- <image src="item.src"></image>
+        <view class='title'>{{item.title}}</view> -->
+    </navigator>
+  </view>
+
+</view>

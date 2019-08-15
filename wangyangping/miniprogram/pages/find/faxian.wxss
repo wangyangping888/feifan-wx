@@ -1,0 +1,18 @@
+/* miniprogram/pages/find/faxian.wxss */
+.button{
+  height: 300rpx;
+  width: 300rpx;
+  margin: 50rpx auto;
+
+}
+button{
+  width: 300rpx;
+  height: 300rpx;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+}
+.time{
+  padding-top: 20rpx;
+  box-sizing: border-box;
+}

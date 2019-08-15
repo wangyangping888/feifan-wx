@@ -1,0 +1,43 @@
+<!--miniprogram/pages/course/course.wxml-->
+<view class="center">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{3000}}" duration="{{500}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="heightFix" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab title="详情">
+      <van-card tag="标签" price="3880" desc="暂无课程介绍" title="影视后期(陈延冰)" thumb="{{ imageURL }}"> 
+      </van-card>
+    </van-tab>
+    <van-tab title="目录">
+      <van-collapse value="{{ activeName }}" bind:change="onChange" accordion>
+        <van-collapse-item title="1 AE基本界面讲解和简单工具" name="1">
+          <view>ae输出流程</view>
+          <view>多层操作和父子链接</view>
+          <view>工程收集</view>
+        </van-collapse-item>
+        <van-collapse-item title="2 AE形状路径和蒙版遮罩" name="2">
+           <view>ae输出流程</view>
+           <view>多层操作和父子链接</view>
+           <view>工程收集</view>
+        </van-collapse-item>
+        <van-collapse-item title="3 文字动画的多种操作方式" name="3">
+           <view>ae输出流程</view>
+           <view>多层操作和父子链接</view>
+           <view>工程收集</view>
+        </van-collapse-item>
+      </van-collapse>
+    </van-tab>
+  </van-tabs>
+  <van-goods-action>
+    <van-goods-action-icon icon="like-o" text="收藏" bind:click="onClickIcon" />
+    <van-goods-action-icon icon="chat-o" text="评论" bind:click="onClickIcon" />
+
+    <van-goods-action-icon icon="cart-o" text="购物车" bind:click="onClickIcon" />
+
+    <van-goods-action-button text="立即购买" bind:click="onClickButton" />
+  </van-goods-action>
+</view>

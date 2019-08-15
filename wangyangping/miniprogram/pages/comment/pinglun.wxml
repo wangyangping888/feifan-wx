@@ -1,0 +1,4 @@
+<!--miniprogram/pages/comment/pinglun.wxml-->
+<rili select="{{flg}}" todos="{{todolist}}" bindchange="onChange"></rili>
+<import src="/template/foot.wxml"/>
+<template is="down"/>

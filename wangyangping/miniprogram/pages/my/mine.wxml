@@ -1,0 +1,26 @@
+<!--miniprogram/pages/my/mine.wxml-->
+<view class="all">
+  <view wx:for="{{items}}" class="image-all">
+  <image src="{{item}}"></image>
+  </view>
+  <view class="picture jia " bindtap="onchangeimg" wx:if="{{flg}}" >+</view>
+</view>
+
+<view class='file-list'>
+  <view>已经上传的文件：</view>
+  <i-swipeout wx:for="{{files}}" wx:key="{{index}}" i-class="i-swipeout-demo-item" actions="{{actions}}" data-url="{{item.url}}" data-id="{{item._id}}" data-name="{{item.title}}" bindchange="handlerCloseButton">
+    <view slot="content">
+      {{index+1}}.
+      <image src="{{item.url}}"></image>
+      {{item.title}}
+    </view>
+  </i-swipeout>
+</view>
+
+<van-dialog use-slot show="{{ show }}" show-cancel-button title="修改图片名称" bind:close="onClose">
+  <van-cell-group>
+    <van-field value="{{ filename }}" type="text" bind:change="onInputChange" label="图片名称" placeholder="请输入图片名称" border="{{ false }}" />
+  </van-cell-group>
+</van-dialog>
+
+<van-dialog id="van-dialog" />

@@ -1,0 +1,40 @@
+/* miniprogram/pages/my/mine.wxss */
+.all{
+  background-color: #eee;
+  width: 100%;
+  overflow: hidden;
+}
+.picture{
+  border: 1px solid gray;
+  width: 200rpx;
+  height: 200rpx;
+  margin-left: 30rpx;
+  margin-right: 10rpx;
+  float: left;
+}
+.jia{
+  font-size: 60px;
+  text-align: center;
+}
+.all image{
+  width: 100%;
+  height: 100%;
+
+}
+.image-all{
+  width: 200rpx;
+  height: 200rpx;
+  border: 1px solid gray;
+  margin-left: 30rpx;
+  margin-right: 10rpx;
+  margin-bottom: 20rpx;
+  float: left;
+}
+.file-list{
+  margin-top: 20rpx;
+}
+
+.file-list image{
+  width: 150rpx;
+  height: 150rpx;
+}

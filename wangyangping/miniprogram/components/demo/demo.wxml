@@ -1,0 +1,9 @@
+<!--components/demo/demo.wxml-->
+<view class='header'>
+  <view class='school'>
+    <view></view>
+    <view class='school1'><slot></slot></view>
+    <view class='denglu' bindtap='jumpPage'>登录</view>
+  </view>
+</view>
+

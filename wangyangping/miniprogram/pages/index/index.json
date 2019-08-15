@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "demo":"/components/demo/demo",
+    "mobile":"/components/mobile/mobile",
+    "kecheng": "/components/kecheng/kecheng"
+  }
+
+}

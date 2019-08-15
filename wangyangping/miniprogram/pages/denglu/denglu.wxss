@@ -1,0 +1,48 @@
+/* miniprogram/pages/denglu/denglu.wxss */
+.van-nav-bar{
+  padding: 0rpx;
+}
+.anniu{
+  width: 400rpx;
+  height: 400rpx;
+  margin-top: 10rpx;
+  background-color:#00b7ef !important;
+
+}
+.denglu{
+  background-color:#00b7ef;
+  width: 400rpx;
+  height: 100rpx;
+  border-radius: 30rpx;
+  font-size: 40rpx;
+  text-align: center;
+  vertical-align: center;
+  color: white;
+
+}
+.van-button.anniu{
+  margin: 0 auto !important;
+}
+.van-nav-bar.title{
+  background-color: #00b7ef;
+  color: white !important;
+  padding: 0px !important;
+
+}
+.van-nav-bar__text{
+  color: white !important ;
+}
+.van-icon{
+  color: white !important;
+}
+.zhuce{
+  background-color:orange;
+  width: 400rpx;
+  height: 100rpx;
+  border-radius: 30rpx;
+  font-size: 40rpx;
+  text-align: center;
+  vertical-align: center;
+  color: white;
+  margin-top: 30rpx;
+}

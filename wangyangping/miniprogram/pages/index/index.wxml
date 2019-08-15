@@ -1,0 +1,16 @@
+<view class='contain'>
+  <demo>非凡学院</demo>
+  <swiper style='margin-top:13.2%' indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{3000}}" duration="{{500}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item.src}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <mobile iconUrls="{{iconUrls}}"></mobile>
+  <kecheng tupUrls="{{tupUrls}}"></kecheng>
+  
+  <import src="/template/foot.wxml"/>
+  <template is="down" />
+</view>
